@@ -1,0 +1,31 @@
+﻿@model WebApplication1.Models.MyViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+<fieldset>
+    <div>&nbsp;</div>
+    <div>
+        @Html.LabelFor(model => model.Priority): 
+        @Html.EditorFor(model => model.Priority)
+    </div>
+    
+    <div>
+        @Html.LabelFor(model => model.DateStart): 
+        @Html.EditorFor(model => model.DateStart)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.DateEnd): 
+        @Html.EditorFor(model => model.DateEnd)
+    </div>
+    <p>
+        <input type="submit" value="Validate" />
+        <label style="color:red">@ViewBag.ErrorMessage</label>
+    </p>
+</fieldset>
+            }
+
