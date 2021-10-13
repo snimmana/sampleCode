@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            width: 100%;
+            border: thick;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #cdcdcd;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" color="red">
+        <h1 style="color:red;">Hello am Page2</h1>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Dept Name</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Emp1</td>
+            <td>Finance</td>
+            <td>NY</td>
+        </tr>
+        <tr>
+            <td>Emp2</td>
+            <td>Software</td>
+            <td>CA</td>
+        </tr>
+        <tr>
+            <td>Emp3</td>
+            <td>Health Care</td>
+            <td>TX</td>
+        </tr>
+    </table>
+    <div>&nbsp;</div>
+    <div>
+        <button onclick="displayMessage();">Click Me</button>
+    </div>
+    <div>
+        <p id="message"></p>
+    </div>
+</body>
+<script>
+    function displayMessage() {
+        document.getElementById("message").innerHTML = "Test Successful.";
+    }
+</script>
+
+</html>
